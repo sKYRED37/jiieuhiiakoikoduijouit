@@ -1,10 +1,14 @@
-"""Football Manager Telegram bot — complete Bothost entry point.
-
 Set BOT_TOKEN in the hosting panel environment variables.
 """
 import asyncio
 import logging
 import os
+import sys
+
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+if BASE_DIR not in sys.path:
+    sys.path.insert(0, BASE_DIR)
+
 from aiogram import Bot, Dispatcher, Router
 from aiogram.filters import Command
 from aiogram.types import Message
@@ -13,6 +17,8 @@ import career_multileague as ml
 from admin_auth import configured_admin_ids
 import career_economy as eco
 from career_multileague_ui import router as multileague_router
+from career_economy_ui import router as economy_router
+
 from career_economy_ui import router as economy_router
 
 logging.basicConfig(level=logging.INFO, format="%(asctime)s %(levelname)s %(name)s: %(message)s")
