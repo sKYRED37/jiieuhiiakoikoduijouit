@@ -1,5 +1,4 @@
-Set BOT_TOKEN in the hosting panel environment variables.
-"""
+
 import asyncio
 import logging
 import os
