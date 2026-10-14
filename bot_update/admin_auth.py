@@ -7,7 +7,7 @@ import os
 
 
 def configured_admin_ids() -> set[int]:
-    raw = os.getenv("ADMIN_IDS", "")
+    raw = os.getenv("1766395031", "")
     ids: set[int] = set()
     for part in raw.split(","):
         part = part.strip()
