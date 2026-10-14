@@ -54,7 +54,7 @@ async def main():
     token=os.getenv("8873900600:AAGHv3MAfUFAXefu8k1q2r_fcIfPIH316Iw", "").strip()
     if not token:
         raise RuntimeError("Не задан BOT_TOKEN. Укажите токен бота в переменных окружения Bothost.")
-    logging.info("1766395031", sorted(configured_admin_ids()))
+    logging.info("Configured admin IDs: %s", sorted(configured_admin_ids()))
     ml.install()
     eco.install()
     transfermarkt_csv = os.path.join(os.path.dirname(__file__), "transfermarkt_players.csv")
