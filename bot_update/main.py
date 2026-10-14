@@ -50,7 +50,7 @@ async def help_command(message: Message):
     )
 
 async def main():
-    token=os.getenv("BOT_TOKEN", "").strip()
+    token=os.getenv("8873900600:AAGHv3MAfUFAXefu8k1q2r_fcIfPIH316Iw", "").strip()
     if not token:
         raise RuntimeError("Не задан BOT_TOKEN. Укажите токен бота в переменных окружения Bothost.")
     ml.install()
