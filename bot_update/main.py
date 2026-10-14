@@ -19,8 +19,6 @@ import career_economy as eco
 from career_multileague_ui import router as multileague_router
 from career_economy_ui import router as economy_router
 
-from career_economy_ui import router as economy_router
-
 logging.basicConfig(level=logging.INFO, format="%(asctime)s %(levelname)s %(name)s: %(message)s")
 help_router = Router(name="help")
 
